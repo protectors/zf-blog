@@ -25,17 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      # 切换setup-node环境
-      - name: Checkout
-        uses: actions/setup-node@v3
-        with:
-          node-version: "12.x"
-      
-      # 初始化npm包
-      - name: Install Node Modules
-        run: npm install yarn -g
-      
-      # 执行build
+      - name: Install Dependencies
+        run: yarn
       - name: Build
         run: yarn build
       
