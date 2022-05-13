@@ -33,7 +33,8 @@ jobs:
       - name: mv dist
         run: |
           mv docs/.vuepress/dist .
-      
+          ls
+              
       # 发布到目标服务器
       - name: scp-deployer
         uses: appleboy/scp-action@master
@@ -41,5 +42,5 @@ jobs:
           host: ${{ secrets.REMOTE_HOST }} # 公网ip
           username: ${{ secrets.REMOTE_USERNAME }} # 用户名
           password: ${{ secrets.REMOTE_PASS }} # 密码
-          source: "dist" # 发送文件
+          source: "docs/.vuepress/dist" # 发送文件
           target: "/home/ubuntu" # 目标目录
