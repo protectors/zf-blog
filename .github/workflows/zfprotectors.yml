@@ -41,4 +41,4 @@ jobs:
           username: ${{ secrets.REMOTE_USERNAME }} # 用户名
           password: ${{ secrets.REMOTE_PASS }} # 密码
           source: "docs/.vuepress/dist" # 发送文件
-          target: "/home/ubuntu/" # 目标目录
+          target: "/home/ubuntu" # 目标目录
