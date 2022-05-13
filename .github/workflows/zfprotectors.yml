@@ -33,10 +33,7 @@ jobs:
       
       # 初始化npm包
       - name: Install Node Modules
-        run: |
-          npm install yarn -g
-          yarn
-          yarn test
+        run: npm install yarn -g
       
       # 执行build
       - name: Build
