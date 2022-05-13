@@ -40,11 +40,11 @@ jobs:
         run: npm run build
       
       # 发布到目标服务器
-      - name: Upload
-        uses: appleboy/scp-action@master
+      - name: scp-deployer
+        uses: siva1024/scp-deployer@v1.0
         with:
           host: ${{ secrets.REMOTE_HOST }} # 公网ip
           username: ${{ secrets.REMOTE_USERNAME }} # 用户名
-          key: ${{ secrets.PRIVATE_KEY }} # 私钥
+          password: ${{ secrets.REMOTE_PASS }} # 密码
           source: "docs/.vuepress/dist" # 发送文件
           target: "/home/ubuntu/" # 目标目录
