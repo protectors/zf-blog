@@ -31,7 +31,8 @@ jobs:
         run: yarn build
       
       - name: mv dist
-        run: mv docs/.vuepress/dist .
+        run: |
+          mv docs/.vuepress/dist .
       
       # 发布到目标服务器
       - name: scp-deployer
