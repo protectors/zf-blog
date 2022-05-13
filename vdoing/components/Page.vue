@@ -22,11 +22,8 @@
             }}</span>
           </h1>
 
-          <slot name="top" v-if="isShowSlotT" />
-
           <Content class="theme-vdoing-content" />
         </div>
-        <slot name="bottom" v-if="isShowSlotB" />
         <PageEdit />
 
         <PageNav v-bind="{ sidebarItems }" />
@@ -85,26 +82,9 @@ export default {
     },
     pageComponent() {
       return this.$frontmatter.pageComponent ? this.$frontmatter.pageComponent.name : false
-    },
-    isShowSlotT() {
-      return this.getShowStatus('pageTshowMode')
-    },
-    isShowSlotB() {
-      return this.getShowStatus('pageBshowMode')
     }
   },
   methods: {
-    getShowStatus(prop) {
-      const { htmlModules } = this.$themeConfig
-      if (!htmlModules) return false
-      if (htmlModules[prop] === 'article') { // 仅文章页显示
-        return this.isArticle()
-      } else if (htmlModules[prop] === 'custom') { // 仅自定义页显示
-        return !(this.isArticle())
-      } else { // 全部显示
-        return true
-      }
-    },
     isArticle() {
       return this.$frontmatter.article !== false
     }

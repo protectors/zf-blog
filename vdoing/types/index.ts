@@ -140,22 +140,6 @@ export interface VdoingThemeConfig extends NoSidebar4DefaultThemeConfig {
   }
 
   /**
-   * 自定义hmtl(广告)模块
-   * @see: https://doc.xugaoyi.com/pages/a20ce8/#htmlmodules
-   */
-  htmlModules?: {
-    homeSidebarB?: string,
-    sidebarT?: string,
-    sidebarB?: string,
-    pageT?: string,
-    pageB?: string,
-    pageTshowMode?: 'article' | 'custom',
-    pageBshowMode?: 'article' | 'custom',
-    windowLB?: string,
-    windowRB?: string,
-  }
-
-  /**
    * 兼容其他未列举配置项
    */
   [key: string]: any;

@@ -275,10 +275,6 @@ export default {
     }
   },
   methods: {
-    getHtmlStr(module) {
-      const { htmlModules } = this.$themeConfig
-      return htmlModules ? htmlModules[module] : ''
-    },
     setBodyClass() {
       document.body.className = 'theme-mode-' + this.themeMode
     },
