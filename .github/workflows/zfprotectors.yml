@@ -33,11 +33,17 @@ jobs:
       
       # 初始化npm包
       - name: Install Node Modules
-        run: npm i
+        run: |
+          npm install yarn -g
+          yarn
+          yarn test
       
       # 执行build
       - name: Build
-        run: npm run build
+        run: yarn build
+      
+      - name: lookup dist
+        run: ls docs/.vuepress/
       
       # 发布到目标服务器
       - name: scp-deployer
