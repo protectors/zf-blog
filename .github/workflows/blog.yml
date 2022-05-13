@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: zfprotectors
+name: blog
 
 # Controls when the workflow will run
 on:
@@ -42,5 +42,5 @@ jobs:
           host: ${{ secrets.REMOTE_HOST }} # 公网ip
           username: ${{ secrets.REMOTE_USERNAME }} # 用户名
           password: ${{ secrets.REMOTE_PASS }} # 密码
-          source: "docs/.vuepress/dist" # 发送文件
+          source: "dist" # 发送文件
           target: "/home/ubuntu" # 目标目录
