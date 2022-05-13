@@ -2,10 +2,11 @@
 home: true
 # heroImage: /img/web.png
 heroText: 听峰问雨
-tagline: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
-actionText: 立刻进入 →
-actionLink: /web/
+tagline: 当你想放弃的时候,想想自己为什么出发
+# actionText: 立刻进入 →
+# actionLink: /web/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+bannerBg: /img/湖面.jpeg
 
 features: # 可选的
   - title: 前端
