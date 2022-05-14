@@ -44,6 +44,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
+        text: '编程语言',
+        link: '/programms/',
+      },
+      {
+        text: '读书笔记',
+        link: '/reading-notes/',
+        items: [
+          { text: '《Go Web编程》', link: '/menu/go-web/' },
+        ],
+      },
+      {
         text: '更多',
         link: '/more/',
         items: [
