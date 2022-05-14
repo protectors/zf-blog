@@ -169,15 +169,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    [
-      'meta',
-      {
-        name: 'keywords',
-        content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
-      },
+    ['meta', { name: 'keywords', content: '个人博客',},
     ],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],  // 解决chrome网站统计不准确问题
     // [
     //   'script',
     //   {
@@ -299,6 +295,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   markdown: {
     lineNumbers: true,
     extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    // extendMarkdown: md => {
+    //   md.use(require('markdown-it-disable-url-encode'), "./") // 图片路径问题
+    // }
   },
 
   // 监听文件变化并重新构建
