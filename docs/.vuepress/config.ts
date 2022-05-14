@@ -40,36 +40,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '计算机技术',
         link: '/technology/',
         items: [
-          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
           { text: '博客搭建', link: '/pages/12b909/' },
-        ],
-      },
-      {
-        text: '前端',
-        link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《Git》', link: '/note/git/' },
-              { text: '小程序笔记', link: '/note/wx-miniprogram/' },
-              { text: 'JS设计模式总结', link: '/pages/4643cd/' },
-            ],
-          },
         ],
       },
       {
         text: '更多',
         link: '/more/',
         items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
+          // { text: '学习', link: '/pages/f2a556/' },
+          // { text: '面试', link: '/pages/aea6571b7a8bae86/' },
+          // { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
+          // { text: '实用技巧', link: '/pages/baaa02/' },
+          // { text: '友情链接', link: '/friends/' },
         ],
       },
       { text: '关于', link: '/about/' },
