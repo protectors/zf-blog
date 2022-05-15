@@ -10,9 +10,6 @@ tagline: 当你想放弃的时候,想想自己为什么出发
 pageClass: vdoing-index-class
 ---
 
+<WebInfo/>
+<IndexBigImg />
 
-1
-<ClientOnly>
-    <IndexBigImg />
-    <WebInfo/>
-</ClientOnly>
