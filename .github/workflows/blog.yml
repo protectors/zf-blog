@@ -41,6 +41,7 @@ jobs:
         with:
           host: ${{ secrets.REMOTE_HOST }} # 公网ip
           username: ${{ secrets.REMOTE_USERNAME }} # 用户名
-          password: ${{ secrets.REMOTE_PASS }} # 密码
+          # password: ${{ secrets.REMOTE_PASS }} # 密码
+          key: ${{ secrets.REMOTE_PRIVATE_KEY }} # 私钥
           source: "dist" # 发送文件
           target: "/var/www" # 目标目录
