@@ -42,5 +42,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   extraWatchFiles: [
     '.vuepress/config/',
     '.vuepress/config.ts',
+    '.vuepress/nav/'
   ]
 })

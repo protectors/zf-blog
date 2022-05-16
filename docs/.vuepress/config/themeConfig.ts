@@ -1,62 +1,10 @@
 import { readFileList, readTotalFileWords, readEachFileWords } from '../webSiteInfo/readFile'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
+import nav from './navBar';
 
 const themeConfig: VdoingThemeConfig['themeConfig'] = {
     // 导航配置
-    nav: [
-      { text: '首页', link: '/' },
-      {
-        text: '计算机科学',
-        link: '/science/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          { text: '计算机组成原理', link: '/pages/organization-and-architecture/' },
-          { text: '计算机操作系统', link: '/pages/os/' },
-          { text: '数据结构与算法', link: '/pages/algorithms/' },
-          { text: '计算机网络', link: '/pages/network/' },
-        ],
-      },
-      {
-        text: '计算机技术',
-        link: '/technology/',
-        items: [
-          { text: '博客搭建', link: '/pages/12b909/' },
-        ],
-      },
-      {
-        text: '编程语言',
-        link: '/programms/',
-      },
-      {
-        text: '读书笔记',
-        link: '/reading-notes/',
-        items: [
-          { text: '《Go Web编程》', link: '/menu/go-web/' },
-        ],
-      },
-      {
-        text: '更多',
-        link: '/more/',
-        items: [
-          { text: '学习', link: '/pages/a92a13/' },
-          // { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          // { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          // { text: '实用技巧', link: '/pages/baaa02/' },
-          // { text: '友情链接', link: '/friends/' },
-        ],
-      },
-      { text: '关于', link: '/about/' },
-      { text: '收藏', link: '/pages/beb6c0bd8a66cea6/' },
-      {
-        text: '索引',
-        link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
-      },
-    ],
+    nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
     repo: 'protectors/zf-blog', // 导航栏右侧生成Github链接
@@ -116,7 +64,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
 
     // 站点配置（首页 & 文章页）
     blogInfo: {
-      blogCreate: '2022-05-15', // 博客创建时间
+      blogCreate: '2022-05-13', // 博客创建时间
       indexView: true,  // 开启首页的访问量和排名统计，默认 true（开启）
       pageView: true,  // 开启文章页的浏览量统计，默认 true（开启）
       readingTime: true,  // 开启文章页的预计阅读时间，条件：开启 eachFileWords，默认 true（开启）。可在 eachFileWords 的 readEachFileWords 的第二个和第三个参数自定义，默认 1 分钟 300 中文、160 英文
