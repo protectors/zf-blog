@@ -1,6 +1,8 @@
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import { UserPlugins } from 'vuepress/config'
+import gitalk from './secretKey'
 import dayjs from 'dayjs'
+import secretInfo from './secretKey';
 
 const plugins:VdoingThemeConfig['plugins'] = <UserPlugins>[
 
@@ -9,7 +11,7 @@ const plugins:VdoingThemeConfig['plugins'] = <UserPlugins>[
     [
         'vuepress-plugin-baidu-tongji', // 百度统计
         {
-            hm: 'e1afebc4263473be072dbf3fc57c424e',
+            hm: secretInfo.hm,
         },
     ],
 
@@ -83,8 +85,8 @@ const plugins:VdoingThemeConfig['plugins'] = <UserPlugins>[
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'fc3e27478bf7123ac04d',
-          clientSecret: '78f41a413450a4d421371e0cf852a6961938d476',
+          clientID: secretInfo.clientID,
+          clientSecret: secretInfo.clientSecret,
           repo: 'zf-blog', // GitHub 仓库
           owner: 'protectors', // GitHub仓库所有者
           admin: ['protectors'], // 对仓库有写权限的人
