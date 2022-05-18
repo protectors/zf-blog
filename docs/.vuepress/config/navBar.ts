@@ -14,7 +14,13 @@ const nav = [
     // operating_layer,
     // applications_layer,
     // communications_layer,
-    { text: '编程题', link: '/menu/acm/' },
+    {
+      text: '编程题', 
+      link: '/menu/acm/',
+      items: [
+        { text: 'UVA', link: '/acm/uva/'},
+      ], 
+    },
     {
       text: '读书笔记',
       link: '/reading-notes/',
