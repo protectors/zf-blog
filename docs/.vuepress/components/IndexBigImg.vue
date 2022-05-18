@@ -201,12 +201,6 @@ export default {
         div.style.backgroundColor = bgTimeColorArray[2];
       } else if (hours >= 0 && hours < 6) {
         div.style.backgroundColor = bgTimeColorArray[3];
-        addTip(
-          `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
-          "info",
-          50,
-          4000
-        );
       }
       document.getElementsByClassName(banner)[0].parentNode.append(div);
     },

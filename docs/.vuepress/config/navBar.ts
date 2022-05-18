@@ -7,12 +7,13 @@ import communications_layer from '../nav/6communicationsLayer'
 
 const nav = [
     { text: '首页', link: '/' },
-    information_layer,
-    hardware_layer,
-    programming_layer,
-    operating_layer,
-    applications_layer,
-    communications_layer,
+    { text: '导航站', link: '/navigation/' },
+    // information_layer,
+    // hardware_layer,
+    // programming_layer,
+    // operating_layer,
+    // applications_layer,
+    // communications_layer,
     {
       text: '读书笔记',
       link: '/reading-notes/',
