@@ -3,20 +3,22 @@
 # 需要批量处理的路径，docs文件夹内的文件夹  (数组，映射路径：path[0]/path[1]/path[2] ... )
 path:
   - docs # 第一个成员必须是docs
-  - 00.目录页
+  - 03.程序设计层/40.设计模式
 
 # 要删除的字段 (数组)
-delete:
-  - tags
-  - categories
-  - author
+# delete:
+#   - tags
+#   - categories
+#   - author
 
  # 要添加、修改front matter的数据 （front matter中没有的数据则添加，已有的数据则覆盖）
 data:
-  sidebar: false
-  article: false
-  comment: false
-  editLink: false
-  author:
-    name: zfprotectors
-    link: https://github.com/protectors
+  tags:
+    - 设计模式
+  # sidebar: false
+  # article: false
+  # comment: false
+  # editLink: false
+  # author:
+  #   name: zfprotectors
+  #   link: https://github.com/protectors

@@ -10,10 +10,11 @@ const nav = [
     { text: '导航站', link: '/navigation/' },
     // information_layer,
     // hardware_layer,
-    // programming_layer,
+    programming_layer,
     // operating_layer,
     // applications_layer,
     // communications_layer,
+    { text: '编程题', link: '/menu/acm/' },
     {
       text: '读书笔记',
       link: '/reading-notes/',

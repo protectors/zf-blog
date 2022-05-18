@@ -14,6 +14,7 @@ const programming_layer = {
         items: [
         ]
       },
+      { text: '设计模式', link: '/menu/design-patterns/' },
     ],
 };
 
