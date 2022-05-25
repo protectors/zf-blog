@@ -25,6 +25,7 @@ const nav = [
       text: '读书笔记',
       link: '/reading-notes/',
       items: [
+        { text: '《Go语言实战》', link: '/menu/go-in-action/' },
         { text: '《Go Web编程》', link: '/menu/go-web/' },
         { text: '《算法精粹 经典计算机科学问题的Python实现》', link: '/menu/classic-problems-in-python/' },
       ],
