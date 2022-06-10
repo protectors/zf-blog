@@ -19,6 +19,7 @@ const nav = [
       link: '/menu/acm/',
       items: [
         { text: 'UVA', link: '/acm/uva/'},
+        { text: 'LeetCode', link: '/acm/leetcode/'},
       ], 
     },
     {
